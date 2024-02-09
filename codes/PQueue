@@ -1,0 +1,19 @@
+// PRIORITY QUEUE
+
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        PriorityQueue<Map.Entry<String, Integer>> priorityQueue = new PriorityQueue<>(Comparator.comparingInt(Map.Entry::getValue));
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            String str = sc.next();
+            int priority = sc.nextInt();
+            priorityQueue.offer(new AbstractMap.SimpleEntry<>(str, priority));
+        }
+        while (!priorityQueue.isEmpty()) {
+            Map.Entry<String, Integer> entry = priorityQueue.poll();
+            System.out.println(entry.getKey());
+        }
+    }
+}

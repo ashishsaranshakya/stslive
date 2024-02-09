@@ -4,7 +4,7 @@ import path from 'path';
 const app = express();
 const __dirname = path.resolve();
 
-const names = ['DES.java', 'DESClient.java', 'DESClientWithRounds.java', 'DESServer.java', 'DESServerWithRounds.java'];
+const names = ['Celeb', 'Hanoi', 'MaxStack', 'MinStack', 'Permutation','PQueue', 'StockSpan' ];
 
 app.get('/:id', (req, res) => {
 	try {
