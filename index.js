@@ -4,7 +4,20 @@ import path from 'path';
 const app = express();
 const __dirname = path.resolve();
 
-const names = ['Celeb', 'Hanoi', 'MaxStack', 'MinStack', 'Permutation','PQueue', 'StockSpan' ];
+const names = [
+	'LoopDetect',
+	'SortBitonic',
+	'EvenOdd',
+	'SortDLL',
+	'MinStack',
+	'Celeb',
+	'Hanoi',
+	'StockSpan',
+	'PQueue',
+	'SortQueue',
+	'MaxWindow',
+	'Permutation'
+];
 
 app.get('/:id', (req, res) => {
 	try {
